@@ -6,7 +6,7 @@
 <div container="main">
         {% for game in games.all %}
 
-            <p>{{ game.name }}</p>
+            <a href="{% url 'detail' game.id %}">{{ game.name }}</a>
             <img src="{{ game.image.url }}">
             <p>{{ game.about }}</p>
 

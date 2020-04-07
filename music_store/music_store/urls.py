@@ -23,7 +23,8 @@ import games.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',games.views.home), 
+    path('',games.views.home,name='games_home'), 
+    path('games/<int:game_id>',games.views.detail, name='detail')
 ]
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
