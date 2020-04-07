@@ -1,0 +1,14 @@
+<h1>GAMES STORE HERE </h1>
+{% load static %}
+
+<h2>Buy all games at exclusive price from us!!</h2>
+
+<div container="main">
+        {% for game in games.all %}
+
+            <p>{{ game.name }}</p>
+            <img src="{{ game.image.url }}">
+            <p>{{ game.about }}</p>
+
+        {% endfor %}
+</div>
