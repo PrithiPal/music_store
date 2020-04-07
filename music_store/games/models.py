@@ -6,6 +6,7 @@ class Game(models.Model) :
     image = models.ImageField(upload_to='')
     about = models.CharField(max_length=100)
     rating = models.IntegerField(default=0)
+    publisher = models.CharField(max_length=100,blank=True)
 
     def __str__(self) : 
-        return self.name 
+        return "{} by {}".format(self.name,self.publisher)
