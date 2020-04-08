@@ -18,18 +18,34 @@
     <!-- Custom styles for this template -->
     <link href="https://getbootstrap.com/docs/4.0/examples/jumbotron/jumbotron.css" rel="stylesheet">
     <style>
-    
-                img {
-                    max-width: 20em;
-                    padding-top : 1em ;
-                    padding-bottom: 1em;
-                    padding-left: 1em;
-                    padding-right: 1em;
+  
+                .gallery-image {
+                  padding: 20px;
                 }
-                .sub-images{
-                  width:70%;
-                  height:auto;
+
+                .gallery-image img {
+                  transform: scale(1.0);
+                  transition: transform 0.4s ease;
                 }
+
+                .img-box {
+                  color: white;
+                  background-color: white;
+                }
+
+                .caption {
+                  position: absolute;
+                  bottom: 5px;
+                  left: 20px;
+                  opacity: 0.0;
+                  transition: transform 0.3s ease, opacity 0.3s ease;
+                }
+
+                .transparent-box {
+                  background-color:rgba(0, 0, 0, 0);
+                  transition: background-color 0.3s ease;
+                }
+
                 .img-box:hover img { 
                   transform: scale(1.1);
                 }
@@ -53,6 +69,7 @@
                 .opacity-low {
                   opacity: 0.5;
                 }
+
         </style>  
 
 </head>
@@ -99,7 +116,7 @@
         <div class="bs-docs-section">
 
                 
-                <!-- Headings -->
+                <!-- Main game description -->
                 <div class="row">
 
                         <div class="col-lg-6 " style="padding-top: 4em;padding-left: 2em; ">
@@ -123,40 +140,64 @@
                                         {% elif game.ratting == 5%}
                                                 <span class="badge badge-success">{{game.rating}}/5</span>
                                         {% endif %}
-                                        
-                              
-                                </div>
-                
+                                          
+                          </div>
                         </div>
                 </div>
                 <hr>
+                <!-- Gallery section -->
+
                 <div class="row">
                     <div class="col-lg-12" style="padding-left: 2em; ">
                         <h2>Gallery</h2>
                     </div>                  
                 </div>
 
-                <div class="row no-gutters" style="padding-left: 2em; ">
+                <div class="row" style="padding-left: 2em; ">
 
                     <div class="col-lg-4">
-                      <div class="img-box">
-                          <img  src="{{ game.image.url }}" alt="..." >
-                      </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="img-box">
-                            <img  src="{{ game.image.url }}" alt="..." >
+                        <div class="gallery-image">
+                            <div class="img-box">
+                              <img  src="{{ game.image.url }}"  class="img-fluid" alt="Responsive image" >
+                              <div class="transparent-box">
+                                <div class="caption">
+                                  <p>Library</p>
+                                  <p class="opacity-low">Architect Design</p>
+                                </div>
+                              </div> 
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-4">
-                        <div class="img-box">
-                              <img  src="{{ game.image.url }}" alt="..." >
+                        <div class="gallery-image">
+                            <div class="img-box">
+                              <img  src="{{ game.image.url }}" class="img-fluid" alt="Responsive image" >
+                              <div class="transparent-box">
+                                <div class="caption">
+                                  <p>Library</p>
+                                  <p class="opacity-low">Architect Design</p>
+                                </div>
+                              </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="gallery-image">
+                            <div class="img-box">
+                              <img  src="{{ game.image.url }}"  class="img-fluid" alt="Responsive image">
+                              <div class="transparent-box">
+                                <div class="caption">
+                                  <p>Library</p>
+                                  <p class="opacity-low">Architect Design</p>
+                                </div>
+                              </div> 
+                            </div>
                         </div>
                     </div>                     
-
                 </div>
+                
                 <hr>
-                        <!-- Blockquotes -->
+                <!-- blockquotes section -->
                 
                         <div class="row">
                           <div class="col-lg-12">
