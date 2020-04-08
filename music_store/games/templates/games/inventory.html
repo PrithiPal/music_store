@@ -17,7 +17,18 @@
 
     <!-- Custom styles for this template -->
     <link href="https://getbootstrap.com/docs/4.0/examples/jumbotron/jumbotron.css" rel="stylesheet">
-  </head>
+    <style>
+    
+                img {
+                    max-width: 20em;
+                    padding-top : 1em ;
+                    padding-bottom: 1em;
+                    padding-left: 1em;
+                    padding-right: 1em;
+                }
+        </style>  
+
+</head>
 
   <body>
 
@@ -34,7 +45,7 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{% url 'inventory' %}">All Games</a>
-            </li>
+          </li>
           <li class="nav-item">
             <a class="nav-link disabled" href="#">Disabled</a>
           </li>
@@ -56,39 +67,53 @@
 
     <main role="main">
 
-        <!-- Main jumbotron for a primary marketing message or call to action -->
-        <div class="jumbotron">
-            <div class="container">
-            <h1 class="display-3">Prithi Game Store </h1>
-            <p>Buy all games at exclusive price from us!</p>
-            <p><a class="btn btn-primary btn-lg" href="{% url 'order' %}" role="button">Order here &raquo;</a></p>
-            </div>
-        </div>
 
         <div class="container">
-                <!-- Example row of columns -->
-                <div class="row">
-                    {% for game in games.all %}
-                        <div class="card border-primary mb-3" style="max-width: 20rem;">
-                                <img class="card-img-top" src="{{ game.image.url }}" height=200 >
-                                <div class="card-header"><a href="{% url 'detail' game.id%}">{{game.name}}</a></div>
-                                <div class="card-body">
-                                
-                                </div>
-                        </div>
-                    {% endfor %}
+                <div class="bs-docs-section", style="padding-top:2em;">
 
-                </div>
+                        <div class="row">
+                          <div class="col-lg-12">
+                            <div class="page-header">
+                              <h1 id="tables">Inventory</h1>
+                              <p> </p>
+                            </div>
                 
-                <hr>
-            
-        </div> <!-- /container -->
+                            <div class="bs-component">
+                              <table class="table table-hover">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Publisher</th>
+                                    <th scope="col">Ratings</th>
+                                    <th scope="col">Ratings</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                    {% for game in games %}
+                                        <tr class="table-active">
+                                            <th scope="row"><a href="{% url 'detail' game.id %}">{{ game.name | capfirst }}</a></th>
+                                            <td>{{ game.publisher | capfirst }}</td>
+                                            <td>{{ game.rating }}</td>
+                                            <td>Column content3</td>
+                                        </tr>
+                                    {% endfor %}
+                                  
+                                </tbody>
+                              </table>
+                            </div><!-- /example -->
+                          </div>
+                        </div>
+                      </div>
+        </div>
+
 
     </main>
 
     <footer class="container">
-      <p>&copy; Company 2017-2018</p>
+      <p>&copy; Experimental Website by Prithi Pal Singh 2020</p>
     </footer>
+
+
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
