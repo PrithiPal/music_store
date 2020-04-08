@@ -15,3 +15,7 @@ def inventory(request) :
 
 def order(request) : 
     return render(request,'games/order.html')
+
+def experiment(request) : 
+    game = Game.objects.all()[0]
+    return render(request,'games/experiment.html',{'game':game});

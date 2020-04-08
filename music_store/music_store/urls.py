@@ -27,6 +27,7 @@ urlpatterns = [
     path('games/<int:game_id>',games.views.detail, name='detail'),
     path('order',games.views.order,name='order'),
     path('inventory',games.views.inventory,name='inventory'),
+    path('exp',games.views.experiment,name='experiment'),
 ]
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
