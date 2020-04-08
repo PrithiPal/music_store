@@ -2,7 +2,7 @@ from django.shortcuts import render, get_object_or_404
 from .models import Game 
 
 def home(request) : 
-    games = Game.objects
+    games = Game.objects.all()[:3]
     return render(request,'games/home.html',{'games':games})
 
 def detail(request,game_id) : 
