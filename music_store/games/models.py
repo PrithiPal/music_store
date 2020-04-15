@@ -23,4 +23,5 @@ class Pizza(models.Model) :
     toppings2 = models.CharField(max_length=100)
 
     size = models.ForeignKey(Size,on_delete=models.CASCADE)
+    
 
