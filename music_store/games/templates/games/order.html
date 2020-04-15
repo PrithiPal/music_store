@@ -1,14 +1,54 @@
-<h1>GAMES STORE HERE </h1>
-{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<h2>Buy all games at exclusive price from us!!</h2>
-<a href="{% url 'home' %}"> Main Page </a>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
+    <title>Add an order</title>
+  </head>
+  <body>
+      {% load widget_tweaks %}
+      <div class="container">
 
-<form>
-    <label for="">Name :  </label>
-    <input id="name" type="text" name="name">
-    <label for="">Name :  </label>
-    <input id="name" type="text" name="name">
+            <h1>Order a Pizza</h1>
+      
+            <h2>{{ note }}</h2>
+                {% if created_pizza_pk %}
+                <h2><a href="{% url 'edit_order' created_pizza_pk %}">Edit Your Order</a></h2>
+                {% endif %}
+      
+      
+            <form action="{% url 'order' %}" method="post">
+                {% csrf_token %}
+                {% for field in pizzaform %}
+              <div class="form-group {%if field.errors %}alert alert-danger{%endif%}">
+      
+      
+                  {{ field.errors }}
+                  {{ field.label_tag }}
+                  {% render_field field class="form-control" %}
+      
+      
+              </div>
+              {% endfor %}
+      
+              
+            </form>
+      
+            <br><br>
 
-</form> 
+      
+          </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
+

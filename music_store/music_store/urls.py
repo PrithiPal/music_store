@@ -28,6 +28,8 @@ urlpatterns = [
     path('order',games.views.order,name='order'),
     path('inventory',games.views.inventory,name='inventory'),
     path('exp',games.views.experiment,name='experiment'),
+    path('order/<int:pk>',games.views.edit_order,name='edit_order')
+
 ]
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
