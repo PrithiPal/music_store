@@ -13,7 +13,7 @@ from igdb_python_api import code
 
 
 igdb_handler = code.IGBRequest()
-response = igdb_handler.getTopnGames(n=2)
+response = igdb_handler.getTopnGames(n=100)
 print(response)
 
 
