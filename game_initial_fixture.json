@@ -1,0 +1,109 @@
+[
+    {
+        "model": "games.Game",
+        "pk": 115278,
+        "fields": {
+            "name": "Rune Factory 4 Special",
+            "popularity": 2090.622837928576,
+            "summary": "Experience this legendary fantasy adventure like never before and embark on exciting escapades with your favorite characters in the brand new Newlywed Mode!",
+            "igdb_url": "https://www.igdb.com/games/rune-factory-4-special"
+        }
+    },
+    {
+        "model": "games.Game",
+        "pk": 120268,
+        "fields": {
+            "name": "Zombie Driver: Immortal Edition",
+            "popularity": 1431.951475008784,
+            "summary": "New and specially improved version of the zombie smashing hit, exclusively for the Xbox One. Insane mix of cars, speed, explosions, blood and zombies! Fight through an epic narrative campaign or test yourself in the Slaughter and Blood Race modes. Engage huge bosses, save survivors, drive crazy vehicles such as a bulldozer, fire truck or even a tank and smash everything in your way. Take part in the Blood Race tournament - chase other cars and take them down without mercy on brutal racing tracks. Jump into the Slaughter mode and survive as long as possible on specially crafted arenas. Experience super smooth gameplay at 60 frames per second and extra crisp visuals. Zombie Driver Ultimate Edition includes all DLC content that was ever created for the game.",
+            "igdb_url": "https://www.igdb.com/games/zombie-driver-immortal-edition"
+        }
+    },
+    {
+        "model": "games.Game",
+        "pk": 105049,
+        "fields": {
+            "name": "Remnant: From the Ashes",
+            "popularity": 997.7779553297696,
+            "ratings": 74.4509523007939,
+            "summary": "The world is in ruins. Only a remnant of mankind remains, hunted to near extinction by horrors from another world. As one of the few survivors left, you will venture into portals to fantastic realms to gather the resources and firepower needed to fight back and retake what was lost. \n \nRemnant: From the Ashes is a third-person survival-action game set in a post-apocalyptic world overrun by mythical creatures. The game provides players and up to three of their friends with a unique, customizable gameplay experience filled with intense shooting and melee combat, gear and weapon crafting, character progression and dynamically-generated levels that offer an infinite number of ways to explore and take on deadly monsters and epic bosses.",
+            "igdb_url": "https://www.igdb.com/games/remnant-from-the-ashes"
+        }
+    },
+    {
+        "model": "games.Game",
+        "pk": 113344,
+        "fields": {
+            "name": "Monster Hunter: World - Iceborne",
+            "popularity": 746.3477723384265,
+            "ratings": 82.6741135380474,
+            "summary": "Let your hunting instinct take you further than ever! \"Iceborne\" is a massive expansion that picks up after the ending of Monster Hunter: World and opens up the new \"master rank!\" New quests, monsters, weapons, armor, and story await to take your hunting to the next level.",
+            "igdb_url": "https://www.igdb.com/games/monster-hunter-world-iceborne"
+        }
+    },
+    {
+        "model": "games.Game",
+        "pk": 19164,
+        "fields": {
+            "name": "Borderlands 3",
+            "popularity": 633.1191035740961,
+            "ratings": 80.9215568990501,
+            "summary": "The original shooter-looter returns, packing bazillions of guns and a mayhem-fueled adventure! Blast through new worlds and enemies as one of four new Vault Hunters. Play solo or with friends to take on insane enemies, score loads of loot and save your home from the most ruthless cult leaders in the galaxy.",
+            "igdb_url": "https://www.igdb.com/games/borderlands-3"
+        }
+    },
+    {
+        "model": "games.Game",
+        "pk": 1877,
+        "fields": {
+            "name": "Cyberpunk 2077",
+            "popularity": 570.2638189450781,
+            "summary": "The upcoming RPG from CD Projekt RED based on the Cyberpunk 2020 tabletop RPG created by Mike Pondsmith. \n \nIn Cyberpunk 2077 you play as V \u2014 a hired gun on the rise \u2014 and you just got your first serious contract. In a world of cyberenhanced street warriors, tech-savvy netrunners and corporate lifehackers, today you take your first step towards becoming an urban legend.",
+            "igdb_url": "https://www.igdb.com/games/cyberpunk-2077"
+        }
+    },
+    {
+        "model": "games.Game",
+        "pk": 115653,
+        "fields": {
+            "name": "Pok\u00e9mon Shield",
+            "popularity": 512.5350291616892,
+            "ratings": 66.0629018214707,
+            "summary": "Unsheathe your sword and take up your shield! \n \nThe world of Pok\u00e9mon expands to include the Galar region in Pok\u00e9mon Sword and Pok\u00e9mon Shield!",
+            "igdb_url": "https://www.igdb.com/games/pokemon-shield"
+        }
+    },
+    {
+        "model": "games.Game",
+        "pk": 36198,
+        "fields": {
+            "name": "Children of Morta",
+            "popularity": 430.2921158240466,
+            "ratings": 67.8371433516608,
+            "summary": "Children of Morta is a narrative driven hack and slash roguelike. Take on the role of a member of the Bergson family, the Guardians of Mount Morta, as you fight desperately against the Corruption. Experience not only what it means to be a hero, but to be part of a family that bears the weight of the mountain together.",
+            "igdb_url": "https://www.igdb.com/games/children-of-morta"
+        }
+    },
+    {
+        "model": "games.Game",
+        "pk": 22422,
+        "fields": {
+            "name": "Sexy Beach 3",
+            "popularity": 400.1979247183379,
+            "ratings": 81.97542074558729,
+            "summary": "Sexy Beach 3 is the third game in the Sexy Beach franchise developed by Illusion Software.",
+            "igdb_url": "https://www.igdb.com/games/sexy-beach-3"
+        }
+    },
+    {
+        "model": "games.Game",
+        "pk": 96217,
+        "fields": {
+            "name": "Eternity: The Last Unicorn",
+            "popularity": 395.5172120331982,
+            "ratings": 60.0,
+            "summary": "A fully featured RPG with classic game mechanics and extensive lore based on Norse mythology. As all elven unicorns were taken away and cursed by witchcraft, the elves\u2019 sole existence became endangered. Players will encounter mesmerizing locations and fantasy characters as Aurehen, a young pure Elf, who undertakes her quest to free the last surviving Unicorn that protects Elven immortality.",
+            "igdb_url": "https://www.igdb.com/games/eternity-the-last-unicorn"
+        }
+    }
+]
